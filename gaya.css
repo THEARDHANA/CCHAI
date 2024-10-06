@@ -1,0 +1,213 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f2f5; /* Background yang lebih ringan */
+}
+
+/* Container atas */
+.top-container {
+    background-color: #343a40;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* Bar atas */
+.topbar {
+    padding: 10px 30px; /* Padding lebih besar untuk memberikan ruang */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    border-bottom: 2px solid #007bff;
+    background-color: #2d3238; /* Warna yang lebih elegan */
+}
+
+/* Link di bar atas */
+.topbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px; /* Ukuran font sedikit lebih kecil */
+}
+
+.topbar a:hover {
+    color: #007bff; /* Efek hover untuk interaksi */
+}
+
+/* Waktu */
+.topbar #waktu {
+    font-size: 16px;
+    margin-left: auto;
+    padding-left: 20px;
+    border-left: 2px solid #fff;
+}
+
+/* Menu navigasi */
+.nav-menu {
+    background-color: #007bff;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* Link di menu navigasi */
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px; /* Sedikit sudut untuk link */
+    transition: background-color 0.3s ease; /* Efek transisi untuk hover */
+}
+
+.nav-menu a:hover {
+    background-color: #0056b3;
+}
+
+/* Wrapper utama untuk konten */
+.box-wrapper {
+    margin-top: 100px; /* Ruang yang lebih besar di bawah top menu */
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    overflow: auto;
+    padding: 20px;
+    gap: 20px; /* Jarak antara box */
+}
+
+/* Box video */
+#box4 {
+    flex: 3;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kontainer video */
+#video-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: relative;
+    border-radius: 8px; /* Border radius untuk video */
+    overflow: hidden;
+}
+
+/* Elemen video */
+#videoElement {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Informasi di bawah video */
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 10px 0;
+}
+
+/* Box info */
+.info-box {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 120px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Status wajah */
+.face-status-box {
+    background-color: #ffcccc;
+}
+
+/* Box iframe */
+#box8 {
+    flex: 2;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style iframe Chatbase */
+#box8 iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Kontrol tombol di bawah video */
+#controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Gaya select */
+#cameraSelectorContainer {
+    margin-right: 10px;
+}
+
+#cameraSelector {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    font-size: 16px;
+}
+
+/* Tombol kontrol */
+.control-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.control-button:hover {
+    background-color: #0056b3;
+}
